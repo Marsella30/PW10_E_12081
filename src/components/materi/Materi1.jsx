@@ -11,7 +11,7 @@ function Materi1() {
    
     const notify = () => {
         toast.success('🎉 Berhasil Tersubmit!', {
-            position: toast.POSITION.TOP_RIGHT,
+            position: toast.TOP_RIGHT,
             theme: 'dark',
         });
     };

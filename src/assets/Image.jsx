@@ -4,6 +4,7 @@ import poster3 from "./images/poster3.webp";
 import poster4 from "./images/poster4.jpg";
 import poster5 from "./images/poster5.jpg";
 import poster6 from "./images/poster6.png";
+// import background from "./images/background2.jpg";
 
 export default {
     Poster1: poster1,
@@ -12,4 +13,5 @@ export default {
     Poster4: poster4,
     Poster5: poster5,
     Poster6: poster6,
+    // Background: background,
 };

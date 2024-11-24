@@ -1,0 +1,216 @@
+.game1-container {
+    padding: 2rem;
+    background: rgba(15, 23, 42, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .game1-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .game1-title {
+    font-size: clamp(2.3rem, 5vw, 4rem) !important;
+    font-weight: 800;
+    background: linear-gradient(to right, #22d3ee, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+  .game1-subtitle {
+    color: #94a3b8;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .input-section {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 2;
+  }
+  
+  .input-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #e2e8f0;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-label svg {
+    color: #22d3ee;
+  }
+  
+  .custom-input1 {
+    width: 30% !important;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+    margin: 0;
+    align-items: flex-start;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .custom-input1:focus {
+    outline: none;
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.2);
+  }
+  
+  .custom-input1::placeholder {
+    color: #64748b;
+    text-align: center;
+  }
+  
+  .status-message {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #22d3ee, #3b82f6);
+    color: white;
+    box-shadow: 0 4px 12px rgba(34, 211, 238, 0.25);
+    margin-top: 1rem;
+  }
+
+  .retry-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #ef4444, #dc2626);
+    color: white;
+    box-shadow: 0 4px 12px rgba(34, 211, 238, 0.25);
+    margin-top: 1rem;
+  }
+  
+  .submit-button:enabled:hover,
+  .retry-button:enabled:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(34, 211, 238, 0.35);
+  }
+  
+  .submit-button:disabled {
+    background: #1e293b;
+    color: #64748b;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .input-section {
+    animation: slideIn 0.5s ease forwards;
+    animation-delay: calc(var(--index) * 0.1s);
+  }
+  
+  @media (max-width: 768px) {
+    .game1-container {
+      padding: 1rem;
+    }
+  
+    .game1-section {
+      padding: 1rem;
+    }
+  
+    .custom-input1 {
+      padding: 0.5rem 0.75rem;
+    }
+  }
+  
+  .Toastify__toast {
+    background: rgba(15, 23, 42, 0.9) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .Toastify__toast-body {
+    color: white;
+  }
+  
+  .Toastify__progress-bar {
+    background: linear-gradient(to right, #22d3ee, #3b82f6) !important;
+  }
+
+  .feedback-message{
+    margin-top: 1 rem;
+    color: #f87171;
+    font-weight: bold;
+  }
+
+  .circle-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #22d3ee;
+    transition: background-color 0.3s ease;
+  }
+
+  .message-container {
+    margin-top: 1.5rem;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: left;
+    color: white;
+  }
+
+  .message-box{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    background-color: rgba(239, 68, 68, 0.3);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    color: #f87171;
+  }
+
+  .message-attempts{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
